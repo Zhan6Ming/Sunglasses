@@ -1,9 +1,9 @@
 {
-  "itemGroup.ultra_goggles": "超级护目镜",
-  "item.ultra_goggles.ultra_goggles": "超级护目镜",
+  "itemGroup.ultra_goggles": "音速墨镜",
+  "item.ultra_goggles.ultra_goggles": "音速墨镜",
   "key.ultra_goggles.toggle_nightvision": "切换夜视功能",
   "key.ultra_goggles.open_offset_config": "打开模型偏移设置",
-  "key.category.ultra_goggles": "超级护目镜",
+  "key.category.ultra_goggles": "音速墨镜",
   "screen.ultra_goggles.offset_config": "模型偏移设置",
   "screen.ultra_goggles.offset_config.slider": "Y轴偏移: %s",
   "screen.ultra_goggles.offset_config.current": "当前偏移: %s"

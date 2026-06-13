@@ -6,7 +6,7 @@
 
 # Sunglasses
 
-**A cool goggles mod with Create interop**
+**A cool and useful pair of sunglasses mod for Minecraft**
 
 <img src="https://img.shields.io/badge/Minecraft-1.21.1-green?style=flat-square" alt="Minecraft 1.21.1">
 <img src="https://img.shields.io/badge/NeoForge-21.1.229-blue?style=flat-square" alt="NeoForge">
@@ -26,7 +26,7 @@
 | --- | --- | --- |
 | Minecraft | 1.21.1 | 必需 |
 | NeoForge | 21.1.229+ | 必需 |
-| Create | 6.0.0+ | 可选（联动） |
+| Create | 6.0.0+ | 可选 |
 | Curios API | 9.0+ | 可选 |
 
 ## 🤖 开发工具说明

@@ -1,7 +1,6 @@
 package com.github.zhan6ming.sunglasses.client;
 
-import com.github.zhan6ming.sunglasses.event.GogglesEventHandler;
-import com.mojang.blaze3d.shaders.FogShape;
+import com.github.zhan6ming.sunglasses.Sunglasses;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.entity.player.Player;
 import net.neoforged.api.distmarker.Dist;
@@ -20,7 +19,7 @@ public class FogEventHandler {
     }
 
     /**
-     * 获取当前处于流体中且拥有岩浆视野的玩家，若不满足条件则返回 null。
+     * 获取当前处于流体中且拥有「清晰视野」效果的玩家，若不满足条件则返回 null。
      */
     private static Player getGogglesPlayer() {
         Minecraft mc = Minecraft.getInstance();
@@ -31,7 +30,7 @@ public class FogEventHandler {
         boolean inWater = player.isEyeInFluidType(NeoForgeMod.WATER_TYPE.value());
 
         if (!inLava && !inWater) return null;
-        if (!GogglesEventHandler.hasLavaVision(player)) return null;
+        if (!player.hasEffect(Sunglasses.CLEAR_VISION)) return null;
 
         return player;
     }
@@ -39,17 +38,17 @@ public class FogEventHandler {
     public static void onRenderFog(ViewportEvent.RenderFog event) {
         if (getGogglesPlayer() == null) return;
 
-        event.setFarPlaneDistance(20.0f);
+        event.setFarPlaneDistance(256.0f);
         event.setNearPlaneDistance(0.0f);
-        event.setFogShape(FogShape.SPHERE);
         event.setCanceled(true);
     }
 
     public static void onComputeFogColor(ViewportEvent.ComputeFogColor event) {
         if (getGogglesPlayer() == null) return;
 
-        event.setRed(0.0f);
-        event.setGreen(0.0f);
-        event.setBlue(0.0f);
+        // 淡绿色迷雾：RGB(47, 61, 53)
+        event.setRed(0.184f);
+        event.setGreen(0.239f);
+        event.setBlue(0.208f);
     }
 }

@@ -1,0 +1,8 @@
+{
+  "sources": [
+    {
+      "type": "single",
+      "resource": "sunglasses:mob_effect/clear_vision"
+    }
+  ]
+}

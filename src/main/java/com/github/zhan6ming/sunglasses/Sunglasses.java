@@ -1,9 +1,12 @@
 package com.github.zhan6ming.sunglasses;
 
+import com.github.zhan6ming.sunglasses.effect.ClearVisionEffect;
 import com.github.zhan6ming.sunglasses.item.SunglassesItem;
 import com.mojang.logging.LogUtils;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -33,6 +36,13 @@ public class Sunglasses {
         DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
     public static final DeferredRegister<AttachmentType<?>> ATTACHMENT_TYPES =
         DeferredRegister.create(NeoForgeRegistries.ATTACHMENT_TYPES, MODID);
+    public static final DeferredRegister<MobEffect> MOB_EFFECTS =
+        DeferredRegister.create(Registries.MOB_EFFECT, MODID);
+
+    /** 清晰视野效果 —— 合并夜视与液体中清晰视野 */
+    public static final DeferredHolder<MobEffect, MobEffect> CLEAR_VISION =
+        MOB_EFFECTS.register("clear_vision",
+            () -> new ClearVisionEffect(MobEffectCategory.BENEFICIAL, 0x392523));
 
     /**
      * 玩家墨镜 Y 轴偏移的持久化附件。
@@ -75,6 +85,7 @@ public class Sunglasses {
         ITEMS.register(modEventBus);
         CREATIVE_MODE_TABS.register(modEventBus);
         ATTACHMENT_TYPES.register(modEventBus);
+        MOB_EFFECTS.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
 
         com.github.zhan6ming.sunglasses.client.ClientSetup.register(modEventBus);

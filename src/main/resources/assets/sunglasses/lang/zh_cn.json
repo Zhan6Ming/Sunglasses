@@ -1,0 +1,12 @@
+{
+  "itemGroup.sunglasses": "墨镜",
+  "item.sunglasses.sunglasses": "墨镜",
+  "item.sunglasses.rough_lens": "粗制镜片",
+  "item.sunglasses.ultra_lens": "高级镜片",
+  "key.sunglasses.toggle_nightvision": "切换夜视功能",
+  "key.sunglasses.open_offset_config": "打开模型偏移设置",
+  "key.category.sunglasses": "墨镜",
+  "screen.sunglasses.offset_config": "模型偏移设置",
+  "screen.sunglasses.offset_config.slider": "Y轴偏移: %s",
+  "screen.sunglasses.offset_config.current": "当前偏移: %s"
+}

@@ -1,16 +1,16 @@
-<!-- markdownlint-disable MD033 -->
+﻿<!-- markdownlint-disable MD033 -->
 
 <div align="center">
 
-<img src="icon.png" alt="Ultra Goggles Icon" width="128" height="128">
+<img src="icon.png" alt="Sunglasses Icon" width="128" height="128">
 
-# Ultra Goggles
+# Sunglasses
 
-**A cool goggles mod for Create**
+**A cool goggles mod with Create interop**
 
 <img src="https://img.shields.io/badge/Minecraft-1.21.1-green?style=flat-square" alt="Minecraft 1.21.1">
 <img src="https://img.shields.io/badge/NeoForge-21.1.229-blue?style=flat-square" alt="NeoForge">
-<img src="https://img.shields.io/badge/License-GPL--3.0-orange?style=flat-square" alt="License: GPL-3.0">
+<img src="https://img.shields.io/badge/License-AGPL--3.0-orange?style=flat-square" alt="License: AGPL-3.0">
 
 </div>
 
@@ -18,7 +18,7 @@
 
 ## ✨ 功能
 
-- 一个更帅的护目镜
+- 一副墨镜
 
 ## 📦 依赖
 
@@ -26,7 +26,7 @@
 | --- | --- | --- |
 | Minecraft | 1.21.1 | 必需 |
 | NeoForge | 21.1.229+ | 必需 |
-| Create | 6.0.0+ | 必需 |
+| Create | 6.0.0+ | 可选（联动） |
 | Curios API | 9.0+ | 可选 |
 
 ## 🤖 开发工具说明
@@ -35,13 +35,13 @@
 
 ## 📄 许可证
 
-本项目基于 **[GNU General Public License v3.0](LICENSE)** 开源。
+本项目基于 **[GNU Affero General Public License v3.0](LICENSE)** 开源。
 
 ```text
 Copyright (C) 2025 ZhanMing
 
 This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
+it under the terms of the GNU Affero General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 ```

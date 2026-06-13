@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "L": {
+      "item": "sunglasses:ultra_lens"
+    },
+    "G": {
+      "item": "create:golden_sheet"
+    }
+  },
+  "pattern": [
+    "N N",
+    "LGL"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sunglasses:sunglasses"
+  }
+}

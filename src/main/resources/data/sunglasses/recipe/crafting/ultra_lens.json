@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "create"
+      }
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "L": {
+      "item": "sunglasses:rough_lens"
+    },
+    "P": {
+      "type": "neoforge:components",
+      "items": "minecraft:potion",
+      "strict": false,
+      "components": {
+        "minecraft:potion_contents": {
+          "potion": "minecraft:long_night_vision"
+        }
+      }
+    }
+  },
+  "pattern": [
+    "RLR",
+    " P "
+  ],
+  "result": {
+    "count": 1,
+    "id": "sunglasses:ultra_lens"
+  }
+}
